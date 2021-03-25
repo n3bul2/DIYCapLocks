@@ -238,21 +238,21 @@ return                                                               ;|
 ;                     CapsLock Mouse Controller                      ;|
 ;-----------------------------------o---------------------------------o
 ;                   CapsLock + Up   |  Mouse Up                      ;|
-;                   CapsLock + Down |  Mouse Down               ;|
-;                   CapsLock + Left |  Mouse Left                     ;|
-;                  CapsLock + Right |  Mouse Right                  ;|
-;                  CapsLock + lbutton |  Ctrl + lbutton                      ;|
-;                  CapsLock + WheelUp |  Ctrl + WheelUp                     ;|
-;                  CapsLock + WheelDown |  Ctrl + WheelDown                     ;|
+;                   CapsLock + Down |  Mouse Down                    ;|
+;                   CapsLock + Left |  Mouse Left                    ;|
+;                  CapsLock + Right |  Mouse Right                   ;|
+;                  CapsLock + lbutton |  Ctrl + lbutton              ;|
+;                  CapsLock + WheelUp |  Ctrl + WheelUp              ;|
+;                  CapsLock + WheelDown |  Ctrl + WheelDown          ;|
 ;    CapsLock + Enter(Push Release) |  Mouse Left Push(Release)      ;|
 ;-----------------------------------o---------------------------------o
 CapsLock & Up::    MouseMove, 0, -10, 0, R                           ;|
 CapsLock & Down::  MouseMove, 0, 10, 0, R                            ;|
 CapsLock & Left::  MouseMove, -10, 0, 0, R                           ;|
 CapsLock & Right:: MouseMove, 10, 0, 0, R                            ;|
-CapsLock & lButton:: Send,^{lButton}                      ;|
-CapsLock & WheelUp::Send,^{Click WheelUp}             ;|
-CapsLock & WheelDown:: Send,^{Click WheelDown}                ;|
+CapsLock & lButton:: Send,^{lButton}                                 ;|
+CapsLock & WheelUp::Send,^{Click WheelUp}                            ;|
+CapsLock & WheelDown:: Send,^{Click WheelDown}                       ;|
 ;-----------------------------------o                                ;|
 CapsLock & Enter::                                                   ;|
 SendEvent {Blind}{LButton down}                                      ;|
@@ -322,13 +322,13 @@ CapsLock & F6:: Send, {Media_Stop}                                   ;|
 ;=====================================================================o
 ;                      CapsLock Window Controller                    ;|
 ;-----------------------------------o---------------------------------o
-;                     CapsLock + s  |  Ctrl + s   (Save Files)        ;|
+;                     CapsLock + s  |  Ctrl + s   (Save Files)       ;|
 ;                     CapsLock + q  |  Ctrl + W   (Close Tag)        ;|
 ;   (Disabled)  Alt + CapsLock + s  |  AltTab     (Switch Windows)   ;|
 ;               Alt + CapsLock + q  |  Ctrl + Tab (Close Windows)    ;|
 ;                     CapsLock + g  |  AppsKey    (Menu Key)         ;|
 ;-----------------------------------o---------------------------------o
-CapsLock & s::Send, ^s                                         ;|
+CapsLock & s::Send, ^s                                               ;|
 ;-----------------------------------o                                ;|
 CapsLock & q::                                                       ;|
 if GetKeyState("alt") = 0                                            ;|
@@ -349,16 +349,16 @@ CapsLock & g:: Send, {AppsKey}                                       ;|
 ;                        CapsLock Self Defined Area                  ;|
 ;-----------------------------------o---------------------------------o
 ;                     CapsLock + d  |  Alt + d(Dictionary)           ;|
-;                     CapsLock + f  |  ctrl + f(Search via Everything);|
-;                     CapsLock + e  |  Open Explorer           ;|
+;                     CapsLock + f  |  ctrl+ f(Search via Everything);|
+;                     CapsLock + e  |  Open Explorer                 ;|
 ;                     CapsLock + r  |  Open Shell                    ;|
 ;                     CapsLock + t  |  Reload Web Pages              ;|
 ;-----------------------------------o---------------------------------o
 CapsLock & d:: Send, !d                                              ;|
 CapsLock & f:: Send, ^f                                              ;|
-CapsLock & e:: Run Explorer                                       ;|
-CapsLock & r:: Run cmder E:                                         ;|
-CapsLock & t:: Send,^+t                                             ;|
+CapsLock & e:: Run Explorer                                          ;|
+CapsLock & r:: Run cmder E:                                          ;|
+CapsLock & t:: Send,^+t                                              ;|
 ;---------------------------------------------------------------------o
 
 
