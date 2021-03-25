@@ -22,3 +22,5 @@
 | CapsLock+R        | Run Cmder E:\ | 启动cmder            |
 | CapsLock+T        | Ctrl+Shift+T  | 恢复关闭的浏览器文件 |
 | CapsLock+鼠标左键 | Ctrl+鼠标左键 | 在新标签打开链接     |
+| CapsLock+鼠标上滚轮 | Ctrl+鼠标上滚轮 | 放大页面     |
+| CapsLock+鼠标下滚轮 | Ctrl+鼠标下滚轮 | 缩小页面     |

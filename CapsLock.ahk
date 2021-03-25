@@ -242,6 +242,8 @@ return                                                               ;|
 ;                   CapsLock + Left |  Mouse Left                     ;|
 ;                  CapsLock + Right |  Mouse Right                  ;|
 ;                  CapsLock + lbutton |  Ctrl + lbutton                      ;|
+;                  CapsLock + WheelUp |  Ctrl + WheelUp                     ;|
+;                  CapsLock + WheelDown |  Ctrl + WheelDown                     ;|
 ;    CapsLock + Enter(Push Release) |  Mouse Left Push(Release)      ;|
 ;-----------------------------------o---------------------------------o
 CapsLock & Up::    MouseMove, 0, -10, 0, R                           ;|
@@ -249,6 +251,8 @@ CapsLock & Down::  MouseMove, 0, 10, 0, R                            ;|
 CapsLock & Left::  MouseMove, -10, 0, 0, R                           ;|
 CapsLock & Right:: MouseMove, 10, 0, 0, R                            ;|
 CapsLock & lButton:: Send,^{lButton}                      ;|
+CapsLock & WheelUp:: Send,^{WheelUp}                      ;|
+CapsLock & WheelDown:: Send,^{WheelDown}                      ;|
 ;-----------------------------------o                                ;|
 CapsLock & Enter::                                                   ;|
 SendEvent {Blind}{LButton down}                                      ;|
