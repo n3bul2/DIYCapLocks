@@ -7,8 +7,11 @@
  * @FilePath: \undefinede:\GitHub\DIYCapLocks\README.md
 -->
 # DIYCapLocks
-基于https://github.com/Vonng/Capslock 的版本，重新定制了个人向的CapLocks映射工具
+Capslock 基于 AutoHotKey 提供服务。
+初始脚本基于 https://github.com/Vonng/Capslock 的版本，重新定制了个人向的CapLocks映射工具
 
+# 使用方式
+下载并安装 [autohotkey](https://www.autohotkey.com/) ，加载配置文件  [capslock.ahk](https://github.com/n3bul2/DIYCapLocks/releases/download/v1.0/CapsLock.ahk)
 
 
 ## 功能
