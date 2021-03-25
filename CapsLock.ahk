@@ -251,8 +251,8 @@ CapsLock & Down::  MouseMove, 0, 10, 0, R                            ;|
 CapsLock & Left::  MouseMove, -10, 0, 0, R                           ;|
 CapsLock & Right:: MouseMove, 10, 0, 0, R                            ;|
 CapsLock & lButton:: Send,^{lButton}                      ;|
-CapsLock & WheelUp:: Send,^{WheelUp}                      ;|
-CapsLock & WheelDown:: Send,^{WheelDown}                      ;|
+CapsLock & WheelUp::Send,^{Click WheelUp}             ;|
+CapsLock & WheelDown:: Send,^{Click WheelDown}                ;|
 ;-----------------------------------o                                ;|
 CapsLock & Enter::                                                   ;|
 SendEvent {Blind}{LButton down}                                      ;|
